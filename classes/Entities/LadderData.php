@@ -7,7 +7,14 @@ class LadderData {
     private $data;
     
     public function __construct($file) {
-        $this->setData(file_get_contents($file));
+        $context = stream_context_create(
+                        array(
+                            'http' => array(
+                                'follow_location' => false
+                                            )
+                            )
+                    );
+        $this->setData(file_get_contents($file, false, $context));
     }
     
     
