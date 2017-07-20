@@ -6,6 +6,8 @@ define('SMARTY_CACHE_DIR', 'cache/');
 define('SMARTY_CACHE', false);
 define('SMARTY_CACHE_LIFETIME', 60);
 
+define('CONTENT_RELOAD_TIME', 3600); //seconds
+
 $settings = new \Controllers\Settings();
 $settings
         ->addContext('DATA', array(

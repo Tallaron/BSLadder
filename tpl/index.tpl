@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="refresh" content="{CONTENT_RELOAD_TIME}">
         <title>BSource - Ladder</title>
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
         <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
