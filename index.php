@@ -7,8 +7,9 @@ require_once 'inc/settings.inc.php';
 
 
 $data = [];
-foreach($settings->get('DATA') as $file) {
+foreach($settings->get('DATA') as $key => $file) {
     $ladder = new \Entities\LadderData($file);
+    $ladder->setClass($key);
     $data[] = $ladder;
 }
 

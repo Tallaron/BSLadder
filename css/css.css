@@ -3,18 +3,79 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-size: 10px;
+/*    padding-top: 50px;
+    padding-left: 50px;*/
+    font-size: 14px;
     color: #dddddd;
-    background-color: #000000;
+/*    background-color: #dddddd;
+    background-image: url("../gfx/overlay.png");
+    background-repeat: no-repeat;
+    background-position: -60px -580px;*/
+    font-family: verdana, arial;
 }
 
-.custom-item {
-    width: 260px;
-    height: 425px;
-    background-color: rgba(200,200,0,0.5);
+.content-container {
+    position: relative;
+    width: 355px;
+    height: 365px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ad835a;
+    display: inline-block;
+    padding: 10px 150px 0px 5px;
+    margin: 0px 0px 0px 5px;
+    border-bottom: 1px solid #ddd;
+    
 }
 
 .carousel {
-    width: 260px;
-    background-color: transparent;
+    width: 100%;
+    height: 100%;
 }
+
+.custom-item {
+    width: 100%;
+    height: 100%;
+}
+
+.copyright {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    text-align: center
+}
+
+.div-table {
+    display: table;
+    margin: 0px 0px 0px 5px;
+}
+
+.div-table-row {
+    display: table-row;
+}
+
+.div-table-cell {
+    display: table-cell;
+}
+
+.cell-pos, .cell-level, .cell-time, .cell-picture, .cell-name {
+    padding: 3px 6px 3px 6px;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.cell-name {
+    text-align: left;
+}
+
+.light-grey {
+    background-color: rgba(150,150,150,0.4);
+}
+

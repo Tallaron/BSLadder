@@ -5,7 +5,9 @@ namespace Entities;
 class LadderData {
 
     private $data;
-    
+    private $class;
+
+
     public function __construct($file) {
         $context = stream_context_create(
                         array(
@@ -32,8 +34,15 @@ class LadderData {
 
 
 
+    public function getClass() {
+        return $this->class;
+    }
 
+    public function setClass($class) {
+        $this->class = $class;
+    }
 
+    
     public function getData() {
         return $this->data;
     }
