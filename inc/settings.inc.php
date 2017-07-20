@@ -8,20 +8,15 @@ define('SMARTY_CACHE_LIFETIME', 60);
 
 define('CONTENT_RELOAD_TIME', 3600); //seconds
 
+define('SEASON', 1);
+define('HARDCORE', 0);
+define('INDEX', 11);
+define('REALM', 'eu');
+define('JSON_URL_PATTERN', 'http://d3.tallaron.de/ladder/json/%s/%d/%d/%d/%s/1/10/1/10000/1');
+
+
 $settings = new \Controllers\Settings();
 $settings
-        ->addContext('DATA', array(
-            'barbarian' => 'http://d3.tallaron.de/ladder/json/eu/1/0/10/barbarian/1/10/1/10000/1',
-            'crusader' => 'http://d3.tallaron.de/ladder/json/eu/1/0/10/crusader/1/10/1/10000/1',
-            'dh' => 'http://d3.tallaron.de/ladder/json/eu/1/0/10/dh/1/10/1/10000/1',
-            'monk' => 'http://d3.tallaron.de/ladder/json/eu/1/0/10/monk/1/10/1/10000/1',
-            'necromancer' => 'http://d3.tallaron.de/ladder/json/eu/1/0/10/necromancer/1/10/1/10000/1',
-            'wd' => 'http://d3.tallaron.de/ladder/json/eu/1/0/10/wd/1/10/1/10000/1',
-            'wizard' => 'http://d3.tallaron.de/ladder/json/eu/1/0/10/wizard/1/10/1/10000/1',
-            'team-2' => 'http://d3.tallaron.de/ladder/json/eu/1/0/10/team-2/1/10/1/10000/1',
-            'team-3' => 'http://d3.tallaron.de/ladder/json/eu/1/0/10/team-3/1/10/1/10000/1',
-            'team-4' => 'http://d3.tallaron.de/ladder/json/eu/1/0/10/team-4/1/10/1/10000/1',
-        ))
         ->addContext('BNET_CLASSES', array(
             'barbarian'     => 'Barbarian',
             'crusader'      => 'Crusader',

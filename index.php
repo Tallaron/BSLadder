@@ -1,5 +1,7 @@
 <?php
 
+set_time_limit(120); //extends the exec time from 30s (default) to 120s.
+
 require_once 'inc/functions.inc.php';
 require_once 'inc/bootstrap.inc.php';
 require_once 'inc/settings.inc.php';
@@ -7,15 +9,10 @@ require_once 'inc/settings.inc.php';
 
 
 $data = [];
-foreach($settings->get('DATA') as $key => $file) {
-    $ladder = new \Entities\LadderData($file);
-    $ladder->setClass($key);
+foreach($settings->get('BNET_CLASSES') as $key => $value) {
+    $ladder = new \Entities\LadderData($key);
     $data[] = $ladder;
 }
-
-
-
-
 
 
 
