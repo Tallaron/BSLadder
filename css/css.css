@@ -3,14 +3,8 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-/*    padding-top: 50px;
-    padding-left: 50px;*/
     font-size: 14px;
     color: #dddddd;
-/*    background-color: #dddddd;
-    background-image: url("../gfx/overlay.png");
-    background-repeat: no-repeat;
-    background-position: -60px -580px;*/
     font-family: verdana, arial;
 }
 
@@ -25,7 +19,7 @@ html, body {
     font-weight: bold;
     color: #ad835a;
     display: inline-block;
-    padding: 10px 150px 0px 5px;
+    padding: 10px 60px 0px 5px;
     margin: 0px 0px 0px 5px;
     border-bottom: 1px solid #ddd;
     
@@ -76,6 +70,6 @@ html, body {
 }
 
 .light-grey {
-    background-color: rgba(150,150,150,0.4);
+    background-color: rgba(150,150,150,0.2);
 }
 

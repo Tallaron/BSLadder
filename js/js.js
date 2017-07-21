@@ -7,8 +7,8 @@ $(function() {
             slidesToShow: 1,
             slidesToScroll: 1,
             autoplay: true,
-            autoplaySpeed: 7000,
-            speed: 750,
+            autoplaySpeed: 12000,
+            speed: 1000,
             arrows: false
         }
     );
