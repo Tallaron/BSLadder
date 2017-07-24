@@ -57,7 +57,7 @@ html, body {
 .div-table-row {
     display: table-row;
     border: 1px solid #222;
-    background-color: #351c00;
+    background-color: #140c0a;
 }
 
 .div-table-row > .div-table-cell:first-child {
