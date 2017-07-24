@@ -1,5 +1,7 @@
 <?php
 
+define('BASE_DIR', ''); //'' if live
+
 define('SMARTY_TPL_DIR', 'tpl/');
 define('SMARTY_COMP_DIR', 'tpl_c/');
 define('SMARTY_CACHE_DIR', 'cache/');
@@ -8,10 +10,6 @@ define('SMARTY_CACHE_LIFETIME', 60);
 
 define('CONTENT_RELOAD_TIME', 3600); //seconds
 
-define('SEASON', 1);
-define('HARDCORE', 0);
-define('INDEX', 11);
-define('REALM', 'eu');
 define('JSON_URL_PATTERN', 'http://d3.tallaron.de/ladder/json/%s/%d/%d/%d/%s/1/10/1/10000/1');
 
 

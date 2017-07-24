@@ -12,7 +12,7 @@ class LadderData {
      * and several global constants. To avoid problems with redirecting
      * @param string $key
      */
-    public function __construct($key) {
+    public function __construct($key, $realm, $season, $hardcore, $index) {
         $this->setClass($key);
         $context = stream_context_create(
                         array(
@@ -22,8 +22,8 @@ class LadderData {
                             )
                     );
         $this->setData(
-            file_get_contents(
-                sprintf(JSON_URL_PATTERN, REALM, SEASON, HARDCORE, INDEX, $this->getClass()), false, $context));
+            file_get_contents(  // calls d3.tallaron.de to receive json data
+                sprintf(JSON_URL_PATTERN, $realm, $season, $hardcore, $index, $this->getClass()), false, $context));
     }
     
     /**

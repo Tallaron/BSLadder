@@ -3,8 +3,9 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-size: 14px;
-    color: #dddddd;
+    font-size: 12px;
+    color: #a99877;
+    background-color: transparent;
     font-family: verdana, arial;
 }
 
@@ -20,7 +21,7 @@ html, body {
     color: #ad835a;
     display: inline-block;
     padding: 10px 60px 0px 5px;
-    margin: 0px 0px 0px 5px;
+    margin: 0px 0px 5px 5px;
     border-bottom: 1px solid #ddd;
     
 }
@@ -48,28 +49,84 @@ html, body {
 
 .div-table {
     display: table;
-    margin: 0px 0px 0px 5px;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
 }
 
 .div-table-row {
     display: table-row;
+    border: 1px solid #222;
+    background-color: #351c00;
+}
+
+.div-table-row > .div-table-cell:first-child {
+    padding-left: 1px;
+}
+
+.div-table-row > .div-table-cell:last-child {
+    padding-right: 1px;
+}
+
+.highlight {
+    background-color: #623503;
+}
+
+.highlight > .div-table-cell > .cell-name > span:last-child {
+    font-weight: bold;
+}
+
+.highlight > .div-table-cell > .cell-name > .clan-tag {
+    color: #aaa;
 }
 
 .div-table-cell {
     display: table-cell;
-}
-
-.cell-pos, .cell-level, .cell-time, .cell-picture, .cell-name {
-    padding: 3px 6px 3px 6px;
-    text-align: right;
+    padding: 1px 0px 1px 0px;
     vertical-align: middle;
 }
 
-.cell-name {
-    text-align: left;
+.cell-pos, .cell-level, .cell-time, .cell-name {
+    border-top: 1px solid #777;
+    border-bottom: 1px solid #222;
+    padding: 3px 15px 3px 0px;
+    display: block;
+    text-align: right;
 }
 
-.light-grey {
-    background-color: rgba(150,150,150,0.2);
+.cell-pos {
+    border-left: 1px solid #777;
 }
+
+.cell-time {
+    border-right: 1px solid #222;
+}
+
+.cell-name {
+    color: #ddd;
+    text-align: left;
+    padding-left: 30px;
+    background-repeat: no-repeat;
+    background-position: 0px 2px;
+}
+
+.clan-tag {
+    color: #777;
+}
+
+.bg-barbarian-0 { background-image: url('../gfx/barbarian-0.png'); }
+.bg-barbarian-1 { background-image: url('../gfx/barbarian-1.png'); }
+.bg-crusader-0 { background-image: url('../gfx/crusader-0.png'); }
+.bg-crusader-1 { background-image: url('../gfx/crusader-1.png'); }
+.bg-demon-hunter-0 { background-image: url('../gfx/demon-hunter-0.png'); }
+.bg-demon-hunter-1 { background-image: url('../gfx/demon-hunter-1.png'); }
+.bg-monk-0 { background-image: url('../gfx/monk-0.png'); }
+.bg-monk-1 { background-image: url('../gfx/monk-1.png'); }
+.bg-necromancer-0 { background-image: url('../gfx/necromancer-0.png'); }
+.bg-necromancer-1 { background-image: url('../gfx/necromancer-1.png'); }
+.bg-witch-doctor-0 { background-image: url('../gfx/witch-doctor-0.png'); }
+.bg-witch-doctor-1 { background-image: url('../gfx/witch-doctor-1.png'); }
+.bg-wizard-0 { background-image: url('../gfx/wizard-0.png'); }
+.bg-wizard-1 { background-image: url('../gfx/wizard-1.png'); }
+
 
