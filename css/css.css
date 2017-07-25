@@ -15,17 +15,6 @@ html, body {
     height: 365px;
 }
 
-.title {
-    font-size: 20px;
-    font-weight: bold;
-    color: #ad835a;
-    display: inline-block;
-    padding: 10px 60px 0px 5px;
-    margin: 0px 0px 5px 5px;
-    border-bottom: 1px solid #ddd;
-    
-}
-
 .carousel {
     width: 100%;
     height: 100%;
@@ -36,82 +25,40 @@ html, body {
     height: 100%;
 }
 
+.title-border {
+    display: inline-block;
+    padding: 2px 60px 2px 2px;
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%,hsla(37,92%,34%,.75)), color-stop(100%,hsla(0,0%,0%,0)));
+    background: -webkit-linear-gradient(left, hsla(37,92%,34%,.75) 50%, hsla(0,0%,0%,0) 100%);
+    background:    -moz-linear-gradient(left, hsla(37,92%,34%,.75) 50%, hsla(0,0%,0%,0) 100%);
+    background:     -ms-linear-gradient(left, hsla(37,92%,34%,.75) 50%, hsla(0,0%,0%,0) 100%);
+    background:      -o-linear-gradient(left, hsla(37,92%,34%,.75) 50%, hsla(0,0%,0%,0) 100%);
+    background:         linear-gradient(left, hsla(37,92%,34%,.75) 50%, hsla(0,0%,0%,0) 100%);
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ad835a;
+    display: inline-block;
+    padding: 3px 60px 3px 5px;
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%,hsla(8,100%,9%,.75)), color-stop(100%,hsla(0,0%,0%,0)));
+    background: -webkit-linear-gradient(left, hsla(8,100%,9%,.75) 50%, hsla(0,0%,0%,0) 100%);
+    background:    -moz-linear-gradient(left, hsla(8,100%,9%,.75) 50%, hsla(0,0%,0%,0) 100%);
+    background:     -ms-linear-gradient(left, hsla(8,100%,9%,.75) 50%, hsla(0,0%,0%,0) 100%);
+    background:      -o-linear-gradient(left, hsla(8,100%,9%,.75) 50%, hsla(0,0%,0%,0) 100%);
+    background:         linear-gradient(left, hsla(8,100%,9%,.75) 50%, hsla(0,0%,0%,0) 100%);
+}
+
 .copyright {
     font-size: 14px;
     font-weight: bold;
-    color: #555;
+    color: #333;
     position: absolute;
     bottom: 0px;
     left: 0px;
     width: 100%;
-    text-align: center
-}
-
-.div-table {
-    display: table;
-    border-collapse: collapse;
-    width: 100%;
-    margin: 0px 0px 0px 0px;
-}
-
-.div-table-row {
-    display: table-row;
-    border: 1px solid #222;
-    background-color: #140c0a;
-}
-
-.div-table-row > .div-table-cell:first-child {
-    padding-left: 1px;
-}
-
-.div-table-row > .div-table-cell:last-child {
-    padding-right: 1px;
-}
-
-.highlight {
-    background-color: #623503;
-}
-
-.highlight > .div-table-cell > .cell-name > span:last-child {
-    font-weight: bold;
-}
-
-.highlight > .div-table-cell > .cell-name > .clan-tag {
-    color: #aaa;
-}
-
-.div-table-cell {
-    display: table-cell;
-    padding: 1px 0px 1px 0px;
-    vertical-align: middle;
-}
-
-.cell-pos, .cell-level, .cell-time, .cell-name {
-    border-top: 1px solid #777;
-    border-bottom: 1px solid #222;
-    padding: 3px 15px 3px 0px;
-    display: block;
-    text-align: right;
-}
-
-.cell-pos {
-    border-left: 1px solid #777;
-}
-
-.cell-time {
-    border-right: 1px solid #222;
-}
-
-.cell-name {
-    color: #ddd;
-    text-align: left;
-    padding-left: 30px;
-    background-repeat: no-repeat;
-    background-position: 0px 2px;
-}
-
-.clan-tag {
-    color: #777;
+    text-align: center;
 }
 
 .bg-barbarian-0 { background-image: url('../gfx/barbarian-0.png'); }
@@ -129,4 +76,76 @@ html, body {
 .bg-wizard-0 { background-image: url('../gfx/wizard-0.png'); }
 .bg-wizard-1 { background-image: url('../gfx/wizard-1.png'); }
 
+.table-background {
+    background-image: url('../gfx/reaper_of_souls.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
 
+.ladder-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.ladder-table tr {
+    border: 1px solid #231d19;
+    background-color: rgba(25,12,8,0.7);
+}
+
+.ladder-table td {
+}
+
+.cell-pos, .cell-name, .cell-level, .cell-time {
+    border-top: 1px solid #362d2a;
+    border-bottom: 1px solid #0b0909;
+    text-align: right;
+    padding: 3px 15px 3px 0px;
+}
+
+.cell-pos {
+    border-left: 1px solid #0b0909;
+}
+
+.cell-time {
+    border-right: 1px solid #0b0909;
+}
+
+.cell-name {
+    color: #ddd;
+    background-repeat: no-repeat;
+    background-position: 0px 1px;
+    text-align: left;
+    padding-left: 25px;
+}
+
+.clan-tag {
+    color: #777;
+}
+
+.highlight {
+}
+
+.highlight td > div {
+    background-color: rgba(70, 120, 25, 0.4) !important;
+}
+
+.highlight .clan-tag {
+    color: #999 !important;
+}
+
+.highlight .cell-name > span:last-child {
+    font-weight: bold;
+}
+
+.black-border {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.ladder-table tr td:first-child > .black-border {
+    border-left: 1px solid #000;
+}
+
+.ladder-table tr td:last-child > .black-border {
+    border-right: 1px solid #000;
+}

@@ -1,3 +1,5 @@
-<div class="div-table-cell">
-    <div class="cell-pos">{$rank->pos}.</div>
-</div>
+<td>
+    <div class="black-border">
+        <div class="cell-pos">{$rank->pos}.</div>
+    </div>
+</td>

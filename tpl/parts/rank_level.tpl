@@ -1,3 +1,5 @@
-<div class="div-table-cell">
-    <div class="cell-level">{$rank->level}</div>
-</div>
+<td>
+    <div class="black-border">
+        <div class="cell-level">{$rank->level}</div>
+    </div>
+</td>

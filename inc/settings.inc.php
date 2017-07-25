@@ -1,6 +1,6 @@
 <?php
 
-define('BASE_DIR', '/BS/Ladder'); //'' if live
+define('BASE_DIR', '/BSLadder'); //'' if live, if root
 
 define('SMARTY_TPL_DIR', 'tpl/');
 define('SMARTY_COMP_DIR', 'tpl_c/');
